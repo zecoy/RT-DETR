@@ -3,19 +3,19 @@ num_classes: 80
 
 TrainDataset:
   name: COCODataSet
-  image_dir: train2017
-  anno_path: annotations/instances_train2017.json
-  dataset_dir: dataset/coco
+  image_dir: /data/data71804/train2017
+  anno_path: /data/data71804/annotations/instances_train2017.json
+  dataset_dir: /data/data71804/
   data_fields: ['image', 'gt_bbox', 'gt_class', 'is_crowd']
 
 EvalDataset:
   name: COCODataSet
-  image_dir: val2017
-  anno_path: annotations/instances_val2017.json
-  dataset_dir: dataset/coco
+  image_dir: /data/data71804/val2017
+  anno_path: /data/data71804/annotations/instances_val2017.json
+  dataset_dir: /data/data71804/
   allow_empty: true
 
 TestDataset:
   name: ImageFolder
-  anno_path: annotations/instances_val2017.json # also support txt (like VOC's label_list.txt)
-  dataset_dir: dataset/coco # if set, anno_path will be 'dataset_dir/anno_path'
+  anno_path: /data/data71804/annotations/instances_val2017.json # also support txt (like VOC's label_list.txt)
+  dataset_dir: /data/data71804/ # if set, anno_path will be 'dataset_dir/anno_path'
