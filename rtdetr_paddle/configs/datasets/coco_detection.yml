@@ -3,16 +3,16 @@ num_classes: 80
 
 TrainDataset:
   name: COCODataSet
-  image_dir: /home/aistudio/data/data71804/train2017
-  anno_path: /home/aistudio/data/data71804/annotations/instances_train2017.json
-  dataset_dir: /home/aistudio/data/data71804/
+  image_dir: /kaggle/input/coco-2017-dataset/coco2017/train2017/
+  anno_path: /kaggle/input/coco-2017-dataset/coco2017/annotations/instances_train2017.json
+  dataset_dir: kaggle/input/coco-2017-dataset/coco2017
   data_fields: ['image', 'gt_bbox', 'gt_class', 'is_crowd']
 
 EvalDataset:
   name: COCODataSet
-  image_dir: /home/aistudio/data/data71804/val2017
-  anno_path: /home/aistudio/data/data71804/annotations/instances_val2017.json
-  dataset_dir: /home/aistudio/data/data71804/
+  image_dir: /kaggle/input/coco-2017-dataset/coco2017/val2017/
+  anno_path: /kaggle/input/coco-2017-dataset/coco2017/annotations/instances_val2017.json
+  dataset_dir: /kaggle/input/coco-2017-dataset/coco2017
   allow_empty: true
 
 TestDataset:
